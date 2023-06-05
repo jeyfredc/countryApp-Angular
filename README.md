@@ -4,4 +4,4 @@ Proyecto realizado en Angular con persistencia de datos en la pagina web mediant
 
 Puedes ver la pagina en el siguiente enlace
 
-https://jeyfredc.github.io/countryApp-Angular/countries/by-capital
+https://jeyfredc.github.io/countryApp-Angular/
