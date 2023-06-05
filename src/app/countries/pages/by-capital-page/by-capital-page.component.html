@@ -7,6 +7,7 @@
 <shared-search-box
 placeholder="Buscar por capital"
 (onValue)="searchByCapital($event)"
+[initialValue]="initialValue"
 ></shared-search-box>
   </div>
 </div>
@@ -14,6 +15,7 @@ placeholder="Buscar por capital"
 <div class="row">
   <div class="col">
     <hr>
+    <shared-loading-spinner  *ngIf="isLoading" ></shared-loading-spinner>
 <!--  Tabla de resultados donde se devuelve el html de el servicio que busca por capitales-->
 <countries-table [countries]="countries" ></countries-table>
   </div>

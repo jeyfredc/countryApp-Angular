@@ -1,9 +1,11 @@
 <!-- keyup.enter es una propiedad de evento, emitValue es un evento llamado dentro del componente hijo search-box  y el txtInput es un dato de referencia que se llama
 sentro del evento del emitValue y se crea tambien como #txtInput para que sea esa referencia-->
+<!-- (keyup.enter)="emitValue(txtInput.value)" -->
 <input
 type="text"
 [placeholder]="placeholder"
 class="form-control"
-(keyup.enter)="emitValue(txtInput.value)"
+(keyup)="onKeyPress(txtInput.value)"
+[value]="initialValue"
 #txtInput
 >
