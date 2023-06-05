@@ -4,14 +4,17 @@
 <div class="row">
   <div class="col">
 <!-- search Box -->
-<shared-search-box placeholder="Buscar por capital"></shared-search-box>
+<shared-search-box
+placeholder="Buscar por capital"
+(onValue)="searchByCapital($event)"
+></shared-search-box>
   </div>
 </div>
 
 <div class="row">
   <div class="col">
     <hr>
-<!--  Tabla de resultados-->
-tabla de resultados
+<!--  Tabla de resultados donde se devuelve el html de el servicio que busca por capitales-->
+<countries-table [countries]="countries" ></countries-table>
   </div>
 </div>
